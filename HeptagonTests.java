@@ -3,16 +3,22 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class HeptagonTests {
-	@Test
+    @Test
     void testGetArea() {
         Heptagon h = new Heptagon(1, 12, new Point(1, 1));
         assertEquals(h.getArea(), (7/4) * (1/Math.tan(Math.pi/7)), 0.01);
     }
 	
-	@Test
+    @Test
     void testGetAreaZero() {
         Heptagon h = new Heptagon(0, 12, new Point(1, 1));
         assertEquals(h.getArea(), 0);
+    }
+
+    @Test
+    void testGetPerimeter() {
+        Heptagon h = new Heptagon(4.73, -50, new Point(-12, 0));
+        assertEquals(h.getPerimeter(), 33.11);
     }
     
     @Test
