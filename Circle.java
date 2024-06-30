@@ -1,4 +1,4 @@
-package lab4;,
+package lab4;
 
 
 public class Circle {
@@ -11,12 +11,12 @@ public class Circle {
 		this.radius = radius;
 	}
 	
-	public double getCircumference(int radius) {
+	public double getCircumference() {
 		return 2 * Math.PI * radius;
 	}
 	
 
-	public double getArea (int radius){
+	public double getArea (){
 		return Math.PI * radius * radius;
 	}
 
