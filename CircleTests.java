@@ -12,5 +12,10 @@ class CircleTests {
         Circle circle = new Circle(center, 5);
         assertEquals(Math.PI * 5 * 5, circle.getArea(), 0.0001);
     }
+    @Test
+	void testCircumfrenceEquals() {
+		Circle c = new Circle(new Point(0, 0), 2);
+		assertEquals(c.getCircumference(), 2 * Math.PI * 2);
+	}
 
 }
